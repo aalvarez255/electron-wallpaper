@@ -1,0 +1,12 @@
+{
+  "name": "root",
+  "private": true,
+  "devDependencies": {
+    "lerna": "^3.20.2"
+  },
+  "scripts": {
+    "start": "lerna run start --stream",
+    "build": "lerna run build --stream",
+    "postinstall": "lerna bootstrap --hoist"
+  }
+}

@@ -1,0 +1,27 @@
+{
+    "appId": "com.electron.wallpaper",
+    "productName": "electron-wallpaper",
+    "directories": {
+      "buildResources": "assets",
+      "output": "release/"
+    },
+    "files": [
+      {
+        "from": "../app/build",
+        "to": "build",
+        "filter": ["**/*"]
+      },
+      {
+        "from": "./dist",
+        "to": "./dist",
+        "filter": ["**/*"]
+      }, 
+      "package.json"
+    ],
+    "win": {
+      "target": [
+        "nsis"
+      ]
+    }
+  }
+  
