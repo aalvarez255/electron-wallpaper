@@ -6,7 +6,7 @@
   },
   "scripts": {
     "start": "lerna run start --stream",
-    "build": "lerna run build --stream",
+    "package": "lerna run build --stream && lerna run package --stream",
     "postinstall": "lerna bootstrap --hoist"
   }
 }
