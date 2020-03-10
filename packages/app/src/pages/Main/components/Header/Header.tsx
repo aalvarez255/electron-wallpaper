@@ -1,12 +1,11 @@
-import React, { PureComponent } from "react"
+import React, { FunctionComponent } from "react"
 import './Header.scss'
 
-export default class Header extends PureComponent {
-  render() {
-    return (
-      <div className='header'>
-        <h1>Electron Wallpaper</h1>
-      </div>
-    )
-  }
+export type Props = {
+  title: string
 }
+
+export const Header: FunctionComponent<Props> = ({title}) =>
+  <div className='header'>
+    <h1>{title}</h1>
+  </div>
